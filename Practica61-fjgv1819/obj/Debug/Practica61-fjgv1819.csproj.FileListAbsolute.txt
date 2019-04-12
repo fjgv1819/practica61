@@ -9,14 +9,3 @@ C:\Users\Franxo\source\Repos\fjgv1819\practica61\Practica61-fjgv1819\obj\Debug\P
 C:\Users\Franxo\source\Repos\fjgv1819\practica61\Practica61-fjgv1819\obj\Debug\Practica61-fjgv1819.pdb
 C:\Users\Franxo\source\Repos\fjgv1819\practica61\Practica61-fjgv1819\obj\Debug\Practica61_fjgv1819.FormAlumnos.resources
 C:\Users\Franxo\source\Repos\fjgv1819\practica61\Practica61-fjgv1819\obj\Debug\Practica61_fjgv1819.Form2.resources
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\bin\Debug\Practica61-fjgv1819.exe.config
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\bin\Debug\Practica61-fjgv1819.exe
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\bin\Debug\Practica61-fjgv1819.pdb
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61-fjgv1819.csprojAssemblyReference.cache
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61_fjgv1819.FormAlumnos.resources
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61_fjgv1819.Form2.resources
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61_fjgv1819.Properties.Resources.resources
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61-fjgv1819.csproj.GenerateResource.cache
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61-fjgv1819.csproj.CoreCompileInputs.cache
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61-fjgv1819.exe
-C:\Users\usuario\source\repos_franxobass\practica61\Practica61-fjgv1819\obj\Debug\Practica61-fjgv1819.pdb

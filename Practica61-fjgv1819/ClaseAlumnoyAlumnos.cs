@@ -15,12 +15,12 @@ namespace Practica61_fjgv1819
     public partial class FormAlumnos : Form
     {
         private TextBox aluNombre;
-        private TextBox aluNota;
         private TextBox listaAlumnos;
         private Button button1;
         private Label label1;
         private Label label2;
         private Label label3;
+        private NumericUpDown aluNota;
         Alumnos misAlumnos = new Alumnos();
 
         public FormAlumnos()
@@ -32,12 +32,13 @@ namespace Practica61_fjgv1819
         private void InitializeComponent()
         {
             this.aluNombre = new System.Windows.Forms.TextBox();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.aluNota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).BeginInit();
             this.SuspendLayout();
             // 
             // aluNombre
@@ -46,13 +47,6 @@ namespace Practica61_fjgv1819
             this.aluNombre.Name = "aluNombre";
             this.aluNombre.Size = new System.Drawing.Size(415, 20);
             this.aluNombre.TabIndex = 0;
-            // 
-            // aluNota
-            // 
-            this.aluNota.Location = new System.Drawing.Point(503, 40);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(100, 20);
-            this.aluNota.TabIndex = 1;
             // 
             // listaAlumnos
             // 
@@ -100,19 +94,27 @@ namespace Practica61_fjgv1819
             this.label3.TabIndex = 6;
             this.label3.Text = "Lista de alumnos";
             // 
+            // aluNota
+            // 
+            this.aluNota.Location = new System.Drawing.Point(503, 43);
+            this.aluNota.Name = "aluNota";
+            this.aluNota.Size = new System.Drawing.Size(81, 20);
+            this.aluNota.TabIndex = 7;
+            // 
             // FormAlumnos
             // 
             this.ClientSize = new System.Drawing.Size(785, 437);
+            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listaAlumnos);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.aluNombre);
             this.Name = "FormAlumnos";
             this.Text = "Formulario alumnos fjgv1819";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,27 +127,26 @@ namespace Practica61_fjgv1819
 
         private void Button1_Click(object sender, EventArgs e)
         {
+
+             
             Alumno miAlumno = new Alumno();
             String miAlumnoStr, miAlumnoNotaTexto;
             miAlumno.Nombre = aluNombre.Text;
             miAlumno.Nota = Convert.ToInt32(aluNota.Text);
-            if (miAlumno.Nota < 5)
-            {
+            if (miAlumno.Nota<5) {
                 miAlumnoNotaTexto = "Suspenso";
             }
-            else if (miAlumno.Nota < 7)
-            {
+            else if (miAlumno.Nota<7) {
                 miAlumnoNotaTexto = "Aprobado";
             }
-            else if (miAlumno.Nota < 9)
-            {
+            else if (miAlumno.Nota<9) {
                 miAlumnoNotaTexto = "Notable";
             }
             else
                 miAlumnoNotaTexto = "Sobresaliente";
 
             miAlumnoStr = aluNombre.Text + " " + aluNota.Text + " " +
-            miAlumnoNotaTexto + Environment.NewLine;
+            miAlumnoNotaTexto +Environment.NewLine;
             listaAlumnos.AppendText(miAlumnoStr);
             misAlumnos.Agregar(miAlumno);
         }
